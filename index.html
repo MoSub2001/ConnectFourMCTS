@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Four</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Connect Four</h1>
+    <div>
+        <select id="game-mode">
+            <option value="" disabled selected>Select Game Mode</option>
+            <option value="human_vs_human">Human vs Human</option>
+            <option value="human_vs_ai">Human vs AI</option>
+            <option value="ai_vs_ai">AI vs AI</option>
+        </select>
+        <button id="start-game" disabled>Start Game</button>
+    </div>
+
+    <div id="game-container">
+        <div id="board"></div>
+    </div>
+    <div id="game-status-container">
+        <p id="game-status">Please select a game mode and start the game.</p>
+        <button id="restart-button" style="display: none;">Restart Game</button>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
